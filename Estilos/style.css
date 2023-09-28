@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://wallup.net/wp-content/uploads/2018/09/25/628858-Bill_Cipher-Gravity_Falls-Bill.jpg);
+    background-size: cover;
+    background-color: rgb(29, 36, 33);
+    background-image: image(opacity 0.3);
+    
+}
+
+div{
+    
+    position: relative;
+    width: 250px;
+    margin-left: 65px;
+    margin-top: 5%;
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+div img:first-child{
+    width: 280px;
+    box-shadow: 10px 20px 10px -10px black;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+div img:last-child{
+    opacity: 0;
+    width: 250px;
+    position: absolute;
+    left: 15px;
+    bottom: -30%;
+    right: 0;
+    transition: .3s ease;
+    margin: auto;
+    border-radius: 20px;
+   
+   
+}
+div .a:last-child{
+    filter: drop-shadow(10px 10px 10px rgb(143, 98, 77));
+}
+
+div .b:last-child{
+    filter: drop-shadow(10px 10px 10px rgb(145, 95, 137));
+}
+
+div .c:last-child{
+    filter: drop-shadow(10px 10px 10px rgb(90, 89, 116));
+}
+
+div .d:last-child{
+    filter: drop-shadow(10px 10px 10px rgb(230, 211, 131));
+}
+
+
+div:hover{
+    transform:
+    /*  */
+    perspective(250px)
+    rotateX(5deg)
+    translatex(0)
+    translateY(-5%);
+}
+
+
+div:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 10%rgba(51,50,50,0.5) rgb(26,26,29)98%);
+
+    opacity: 0;
+    transition: all .3s ease;
+    filter: blur(1px);
+
+}
+
+div:hover:before{
+    opacity: 1;
+}
+
+div:hover img:last-child{
+    opacity: 1;
+}
